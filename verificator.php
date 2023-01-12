@@ -28,4 +28,7 @@ echo '
         }
         echo '</table>';
         $result->free();
+        echo'<form method=POST action = "http://kursovoy:3006/index.php">
+            <button  formmethod=POST name=1 value=1 class = "button_main"">Выйти</button>
+            </form><br></div>';
         ?>
