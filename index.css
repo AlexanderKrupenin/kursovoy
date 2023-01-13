@@ -1,3 +1,34 @@
+@import "http://fonts.fontstorage.com/import/ruslan.css";
+@import "http://fonts.fontstorage.com/import/beermoney.css";
+@import "http://fonts.fontstorage.com/import/alexander.css";
+@import "http://fonts.fontstorage.com/import/barkentina.css";
+@import "http://fonts.fontstorage.com/import/berniershade.css";
+@import "http://fonts.fontstorage.com/import/ptserif.css";
+@import "http://fonts.fontstorage.com/import/montserratalternates.css";
+@import "http://fonts.fontstorage.com/import/cleanvertising.css";
+@import "http://fonts.fontstorage.com/import/ubuntu.css";
+@import "http://fonts.fontstorage.com/import/casper.css";
+@import "http://fonts.fontstorage.com/import/cousine.css";
+@import url('https://fonts.googleapis.com/css?family=Itim');
+@import url('https://fonts.googleapis.com/css?family=Devonshire');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+.text_up_fio {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Nunito;
+  text-decoration: none;
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 20px;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  background-color:rgb(39, 39, 39);
+  padding: 4px 30px;
+}
+
+
 .button_main {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -52,6 +83,9 @@
   }
 
   .div_history{
+    display: inline-block;
+    font-family: Nunito;
+    position: relative;
     color: rgb(39, 39, 39);
     font-size: 20px;
     font-family: Nunito;
@@ -70,6 +104,7 @@
 
   .div_aut{
     position: absolute;
+    font-family: Nunito;
     text-align: center;
     color: rgb(39, 39, 39);
     font-size: 20px;
@@ -88,7 +123,7 @@
   
   }
   body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Nunito;
     box-sizing: border-box;
   }
   .container-fluid{
@@ -103,10 +138,7 @@
     position: absolute;
     top: 0%;
     left: 0%;
-    background: linear-gradient(132deg, #53B8CF,
-    #9375CA,
-    #B65CD7,
-    #F901D1);
+    background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     height: 100vh;
@@ -177,3 +209,36 @@
       opacity: 0;
     }
   }
+  .head_title{
+    position: fixed;
+    z-index: 1000;
+}
+
+  .top_line{
+    left: 0%;
+    height: 0%;
+    background: rgb(39, 39, 39);
+
+    transform: skew(0deg);
+}
+
+.text_up{
+  position: absolute;
+  font-family: Nunito;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 36px;
+  word-spacing: 8px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  
+  width: 20%;
+  height: 15%;
+  background: rgb(39, 39, 39);
+  
+}
+
+.back {
+  background-color: rgb(35, 35, 35);
+}

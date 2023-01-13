@@ -1,35 +1,34 @@
 <?php
     include "db.php";   
 $full_base = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full`");
-
+$id = $_GET['id'];
 echo '
     <!DOCTYPE HTML>
     <html>
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>MyApp</title>
     <style>
-   table {
-    width: 100%; /* Ширина таблицы */
-    border-collapse: collapse; /* Убираем двойные линии */
-   }
-   thead {
-    background: #f5e8d0; /* Цвет фона заголовка */
-   }
-   td, th {
-    padding: 5px; /* Поля в ячейках */
-    border: 1px solid #333; /* Параметры рамки */
-   }
-   tbody tr:nth-child(even) {
-    background: #f0f0f0; /* Зебра */
-   }
-  </style>
+    th, td {
+        padding: 10px;
+    }
+
+    th {
+        background: #606060;
+        color: #fff;
+    }
+
+    td {
+        background: #b5b5b5;
+    }
+</style>
     <script src="UpdateScript.js"> </script>
     <script src="update_counter.js"> </script>
     <link rel="manifest" href = "site.webmanifest">
     <link rel="stylesheet" href = "index.css">
     </head>
-    <body>
-    <div class = "" style="position:absolute; border: 4px double black;">';
+    <body>';
+    
+        echo' <div class = "" style="position:absolute; border: 4px double black; top: 10%;">';
         echo '<table><tr>
         <th>global_id</th>	
         <th>ObjectName</th>	
@@ -67,7 +66,10 @@ echo '
         <th>adress</th>	
         <th>latitude</th>	
         <th>longitude</th>
-        </tr>';
+        </tr>
+        
+        ';
+        
         foreach ($full_base as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
             echo '<tr>';
             echo '<td>' . $row["global_id"] . '</td>';
@@ -108,13 +110,13 @@ echo '
             echo '<td>' . $row["longitude"] . '</td>';
             echo '</tr>';
         }
-        echo '</table>';
+        echo '</table>
        
-        echo'<form method=POST action = "http://kursovoy:3006/base_450_full.php">
-            <button  formmethod=POST name=1 value=1 class = "button_main"">База данных площадок в парках</button>
-            </form><br>';
-
-        echo'<form method=POST action = "http://kursovoy:3006/index.php">
-            <button  formmethod=POST name=1 value=1 class = "button_main"">Выйти</button>
-            </form><br></div>';
+        </div>';
+        echo'
+        <form method=POST action = "http://kursovoy:3006/main.php?id='.$id.'">
+            <button formmethod=POST name=1 value=1 class = "button_main"">Назад</button>
+            </form><br>
+        ';
 ?>
+

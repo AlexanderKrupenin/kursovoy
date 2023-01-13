@@ -29,13 +29,40 @@ echo '
     <title>Krupenin</title>
       <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
       <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="index.css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
   <body>
     <header>
     </header>';
  echo'
-    <div class= "div_aut">
+ <div class="container-fluid">
+ <!-- Background animtion-->
+     <div class="background">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+       <div class="cube"></div>
+     </div>
+
+
+     <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 55%;">
     <form action="http://kursovoy:3006/registration.php" method="post" >
     <label>Фамилия:</label><br>
     <input type="text" name="surname" /><br>

@@ -12,8 +12,9 @@ echo '
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     
   </head>
-  <body background="">
+  <body>
     <header>
+    
     </header>';
  echo'
  <div class="container-fluid">
@@ -40,10 +41,10 @@ echo '
        <div class="cube"></div>
       <div class="cube"></div>
     </div>
-    <div class= "div_aut" style="postion:absolute; left:35%; top: 20%">
+    <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 35%;">
     <form action="http://kursovoy:3006/index.php" method="post">
       <label>Логин:</label><br>
-      <input type="text" name="login" /><br><br>
+      <input type="text" name="login" /><br>
       <label>Пароль:</label><br>
       <input type="password" name="password" /><br><br>
       <input class = "button_main"  type="submit" value = " Отправить  "/>
