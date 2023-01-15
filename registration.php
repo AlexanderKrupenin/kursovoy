@@ -10,14 +10,27 @@
  $password = md5($_POST["password"]);
  $id_user = "";
  $role = "2";
+ $ver = "1";
+ 
  if(!empty($_POST)){
-    $result = mysqli_query($mysql, "SELECT * FROM users WHERE login=\"".$_POST['login']."\"");
+  $result = mysqli_query($mysql, "SELECT * FROM users WHERE login=\"".$_POST['login']."\"");
+  if(mysqli_num_rows($result) == 0){
+      mysqli_query($mysql, "INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
+      VALUES (NULL,'$first_name', '$second_name', '$surname', '$role', '$ver', '$login', '$password')");
+  }
 
-    if(mysqli_num_rows($result) == 0){
-        mysqli_query($mysql, "INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`) VALUES (NULL,'$first_name', '$second_name', '$surname', '$role', '$login', '$password')");
-    }
-    
-}
+}/*INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
+VALUES (NULL,'null', 'null', 'null', '2', '1', 'null', 'null')
+
+id_user	
+first_name	
+second_name	
+surname	
+role	
+ver	
+login	
+password
+*/
 
  ?>
 <?php

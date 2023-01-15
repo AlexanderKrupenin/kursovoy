@@ -95,7 +95,7 @@
     transition-duration: .2s;
     -webkit-transition-duration: .2s;
     -moz-transition-duration: .2s;
-    background-color:rgb(255, 255, 255);
+    background-color: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);
     padding: 4px 30px;
     border-color: rgb(39, 39, 39);
     width: 40%;

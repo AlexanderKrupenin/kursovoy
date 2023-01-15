@@ -20,7 +20,7 @@ body {
     <link rel="stylesheet" href = "index.css">
     
     </head>
-    <body background=rgb(45,45,45)>
+    <body>
 
     <header>
     <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
@@ -30,9 +30,7 @@ body {
         </form><br>
   </header>
 
- 
-
-    <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 80%; height: 20%;">
+    <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 80%; height: 20%; ">
     <p>Вы авторизовались под логином: ';  
     foreach ($result_login_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
         echo '<td>' . $row["login"] . '</td>';

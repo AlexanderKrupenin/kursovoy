@@ -41,17 +41,21 @@ echo '
        <div class="cube"></div>
       <div class="cube"></div>
     </div>
-    <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 35%;">
+    <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 45%;">
     <form action="http://kursovoy:3006/index.php" method="post">
       <label>Логин:</label><br>
       <input type="text" name="login" /><br>
       <label>Пароль:</label><br>
       <input type="password" name="password" /><br><br>
-      <input class = "button_main"  type="submit" value = " Отправить  "/>
+      <input class = "button_main"  type="submit" value = "Авторизоваться"/>
    </form><br>
    <form action="http://kursovoy:3006/registration.php" method="post">
-    <input class = "button_main"  type="submit" value = "Регистрация"/>
- </form>
+    <input class = "button_main"  type="submit" value = "   Регистрация   "/>
+ </form><br>
+
+ <form action="http://kursovoy:3006/guest.php" method="post">
+  <input class = "button_main"  type="submit" value = "Войти как гость "/>
+</form>
     </div>';
     echo'
   </body>
