@@ -18,7 +18,7 @@ echo '
     <link rel="stylesheet" href = "index.css">
     
     </head>
-    <body background=rgb(45,45,45)>
+    <body>
 
     <header>
     <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
@@ -26,16 +26,22 @@ echo '
     <form method=POST action = "http://kursovoy:3006/index.php">
         <button  formmethod=POST name=1 value=1 class = "head_title button_main" style= "position: fixed; left: 5%;top:12%;">Выйти</button>
         </form><br>
-        
   </header>
 
     <body>
     <div class = "div_history" style="position: absolute; left: 8%; top:25%; width: 80%; height: 80%;">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HxsBpqUSHGdieR_FqkXfEYd3_XmfPr4&ehbc=2E312F" width="1200" height="600"></iframe>
+        </div>
+    </body>
+            <footer>
+            <div class = "top_line"  style= "position: absolute; left: 0%; top:120%; width: 100%; height: 20%;">
+            <div class = "text_footer"  style= "position: absolute; left: 20%; top:20%; width: 60%; height: 20%; color: white; text-align: center;">Крупенин Александр Васильевич
+            <br>
+            группа 211-362
+            <br>
+            +7 901-744-15-74
             </div>
-            </body>
-     <footer>
-     <div class = "top_line"  style= "position: absolute; left: 0%; top:120%; width: 100%; height: 20%;"> </div>
-     </footer>
+           </div>
+            </footer>
      ';
         ?>

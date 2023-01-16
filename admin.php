@@ -53,7 +53,7 @@ body {
         echo '</table>';
         $result->free();
         echo'</div>
-        <div class = "div_history" style="position: absolute; left: 8%; top:60%; width: 80%; height: 40%;">
+        <div class = "div_history" style="position: absolute; left: 8%; top:60%; width: 35%; height: 40%;">
         
             <form method=POST>
             <button formmethod=POST name=button_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">База данных площадок в парках</button>
@@ -74,11 +74,20 @@ body {
             <form method=POST>
             <button formmethod=POST name=button_base_users'.$id.' value=1 class = "button_main" style="width: 100%;">База данных пользователей</button>
             </form><br>
+
+       
             ';
 
         echo'
             
             </div>
+
+            <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
+            <form method=POST>
+                <button formmethod=POST name=button_sort_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
+                </form><br>
+            </div>
+
             <div class = "div_history" style="position: absolute; left: 8%; top:110%; width: 80%; height: 80%;">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HxsBpqUSHGdieR_FqkXfEYd3_XmfPr4&ehbc=2E312F" width="1200" height="600"></iframe>
             </div>
@@ -101,5 +110,8 @@ if ($_POST['button_base_2000_koor'.$id.'']) {
 }
 if ($_POST['button_base_users'.$id.'']) {
     Header("Location:base_users.php?id=$id");
+}
+if ($_POST['button_sort_base_2000_full'.$id.'']) {
+    Header("Location:search.php?id=$id");
 }
 ?>
