@@ -75,17 +75,21 @@ body {
             <button formmethod=POST name=button_base_users'.$id.' value=1 class = "button_main" style="width: 100%;">База данных пользователей</button>
             </form><br>
 
-       
-            ';
+            </div>';
 
         echo'
             
-            </div>
+            
 
             <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
             <form method=POST>
-                <button formmethod=POST name=button_sort_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
+                <button formmethod=POST name=button_search_sport_ploshchadki_full_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск спортплощадок</button>
                 </form><br>
+            
+
+            <form method=POST>
+            <button formmethod=POST name=button_search_ploshchadki_v_parkah_full_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
+            </form><br>
             </div>
 
             <div class = "div_history" style="position: absolute; left: 8%; top:110%; width: 80%; height: 80%;">
@@ -111,7 +115,10 @@ if ($_POST['button_base_2000_koor'.$id.'']) {
 if ($_POST['button_base_users'.$id.'']) {
     Header("Location:base_users.php?id=$id");
 }
-if ($_POST['button_sort_base_2000_full'.$id.'']) {
-    Header("Location:search.php?id=$id");
+if ($_POST['button_search_sport_ploshchadki_full_base_2000_full'.$id.'']) {
+    Header("Location:search_sport_ploshchadki_full.php?id=$id");
+}
+if ($_POST['button_search_ploshchadki_v_parkah_full_base_450_full'.$id.'']) {
+    Header("Location:search_ploshchadki_v_parkah_full.php?id=$id");
 }
 ?>
