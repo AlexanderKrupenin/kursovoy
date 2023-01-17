@@ -17,6 +17,7 @@ echo '
     
     </header>';
  echo'
+
  <div class="container-fluid">
 <!-- Background animtion-->
     <div class="background">
@@ -41,6 +42,9 @@ echo '
        <div class="cube"></div>
       <div class="cube"></div>
     </div>
+    
+    <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:37%; top: -5%; width: 20%; height: 25%;" src ="img/logo2.svg"></img>
+
     <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 45%;">
     <form action="http://kursovoy:3006/index.php" method="post">
       <label>Логин:</label><br>

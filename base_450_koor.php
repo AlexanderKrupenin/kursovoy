@@ -41,7 +41,7 @@ td {
 
 </head>
 <body>
-    <div class = "" style="position:absolute; left: 20%; top: 25%">';
+<div class = "div_history_bd" style="position:absolute; border:none; top: 25%;">';
         echo '<table><tr>
 	        <th>adress</th>
             <th>latitude</th>

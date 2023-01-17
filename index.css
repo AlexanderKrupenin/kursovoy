@@ -136,6 +136,26 @@
     height: 40%;
   }
 
+.div_history_bd{
+    display: inline-block;
+    font-family: Nunito;
+    position: relative;
+    color: rgb(39, 39, 39);
+    font-size: 12px;
+    font-family: Nunito;
+    text-decoration: none;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 20px;
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    background-color: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);
+    padding: 4px 30px;
+    border-color: rgb(39, 39, 39);
+    width: 40%;
+    height: 40%;
+  }
+
   .div_aut{
     position: absolute;
     font-family: Nunito;
@@ -154,8 +174,28 @@
     border-color: rgb(39, 39, 39);
     width: 20%;
     height: 40%;
+  }
+
+  .div_aut_logo{
+    position: absolute;
+    font-family: Nunito;
+    text-align: center;
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    font-family: Nunito;
+    text-decoration: none;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 20px;
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    padding: 4px 30px;
+    border-color: rgb(39, 39, 39);
+    width: 20%;
+    height: 40%;
   
   }
+
   body {
     font-family: Nunito;
     box-sizing: border-box;
