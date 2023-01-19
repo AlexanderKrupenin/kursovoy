@@ -7,7 +7,7 @@ echo '
 <!DOCTYPE HTML>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MyApp</title>
+<title>Площадки.ru</title>
 <script src="UpdateScript.js"> </script>
 <script src="update_counter.js"> </script>
 <link rel="manifest" href = "site.webmanifest">
@@ -37,6 +37,7 @@ td {
 <form method=POST class = "head_title" action = "http://kursovoy:3006/main.php?id='.$id.'">
     <button formmethod=POST name=1 value=1 class = "button_main" style= "position: fixed; left: 5%;top:12%;">Назад</button>
     </form><br>
+    <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:65%; top: -5%; width: 20%; height: 25%;" src ="img/logo.svg"></img>
 </header>
 
 </head>
