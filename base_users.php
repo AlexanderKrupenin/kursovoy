@@ -28,7 +28,7 @@ echo '
     <h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
     <form method=POST class = "head_title" action = "http://kursovoy:3006/main.php?id='.$id.'">
         <button formmethod=POST name=1 value=1 class = "button_main" style= "position: fixed; left: 5%;top:12%;">Назад</button>
-        </form><br>
+    </form><br>
   </header>
 
 <body>
@@ -51,24 +51,39 @@ echo '
         
         <form method=\"POST\">
         
-        <div class = 'div_history_bd' style= 'position: absolute; left: 20%;top:12%; width:15%;border:none;'>
-        <div>
+        <div class = 'div_history_bd' style= 'position: absolute; left: 0%;top:10%; width:15%;border:none;'>
         <input style='background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);' type=\"text\" name=\"id1\" placeholder='ID'>
-        </div><br>
+        <br>
         
-        </div><br>
+        
 
-        <div class = 'div_history_bd' style= 'position: absolute; left: 8%;top:20%; width:10%; border:none;'>
-        <div>
+        <div class = 'div_history_bd' style= 'position: absolute; left: 0%;top:20%; width:10%; border:none;'>
         <button class = 'button_main' type=\"submit\ \">Поиск</button>
         </div>
 
         </div>
-        </form>";
+        </form>
+        </div> 
+            ";
+        
         require("visual.php");
-      
+
+        $id1 = $_POST['id1'];
+
+        echo'
+        <div class = "div_history_bd" style= "position: absolute; left: 2%;top:30%; width: 74%; border:none;">
+        <form method=POST>
+
+        <div class = "div_history_bd" style= "position: absolute; left: 0%;top:10%; width:15%;border:none;">
+        <input style="background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);" type=\"text\" name=\"id1\" placeholder="ID">
+
+            <button formmethod=POST name=button_base_2000_koor'.$id.' value=1 class = "button_main" style="width: 100%;">База данных спортплощадок сокращенная</button>
+            </form>
+            </div>
+        <br>
+        ';
+
         if ($_POST['id1'] <> NULL){
-            $id1 = $_POST['id1'];
             $products = mysqli_query($mysql, "SELECT * FROM `users` WHERE id_user='$id1'");
             $products = mysqli_fetch_all($products);
             foreach ($products as $product) {
@@ -164,4 +179,9 @@ echo '
 </html>';
 
 ?>
+<?php
+if ($_POST['button_delete'.$id1.'']) {
+    $products = mysqli_query($mysql, "DELETE FROM `users` WHERE `id_user` = '$id1'");
+}
 
+?>

@@ -40,13 +40,13 @@ body {
         echo '<td>' . $row["login"] . '</td>';
     }
     echo'</p>';
-        echo '<table><tr><th>ID</th><th>ИМЯ</th><th>ОТЧЕСТВО</th><th>ФАМИЛИЯ</th><th>РОЛЬ</th><th>ЛОГИН</th><th>ПАРОЛЬ</th></tr>';
+        echo '<table><tr><th>ID</th><th>ФАМИЛИЯ</th><th>ИМЯ</th><th>ОТЧЕСТВО</th><th>РОЛЬ</th><th>ЛОГИН</th><th>ПАРОЛЬ</th></tr>';
         foreach ($result as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
             echo '<tr>';
             echo '<td>' . $id . '</td>';
+            echo '<td>' . $row["surname"] . '</td>';
             echo '<td>' . $row["first_name"] . '</td>';
             echo '<td>' . $row["second_name"] . '</td>';
-            echo '<td>' . $row["surname"] . '</td>';
             echo '<td>' . 'Администратор' . '</td>';
             echo '<td>' . $row["login"] . '</td>';
             echo '<td>' . $row["password"] . '</td>'; 

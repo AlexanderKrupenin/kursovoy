@@ -1,7 +1,7 @@
 
 <?php
     include "db.php";   
-$full_base = mysqli_query($mysql, "SELECT * FROM `sport_ploshchadki`");
+$full_base = mysqli_query($mysql, "SELECT * FROM `sport_ploshchadki_full`");
 $id = $_GET['id'];
 echo '
 <!DOCTYPE HTML>

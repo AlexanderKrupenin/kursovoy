@@ -1,16 +1,21 @@
 <?php
 $result_login_name = mysqli_query($mysql, "SELECT login FROM `users` WHERE id_user='$id'");
+
 echo '
     <!DOCTYPE HTML>
     <html>
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>MyApp</title>
-
     <style>
     body {
         height: 1000px;
         background: linear-gradient(to right, #90dbf4, #cfbaf0, #fde4cf);
     }
+
+
+</style>
+
+
     </style>
 
     <script src="UpdateScript.js"> </script>
@@ -30,26 +35,60 @@ echo '
   </header>
 
     <body>
+
+
+
     <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 80%; height: 20%;">
     <p>Вы авторизовались под логином: ';  
     foreach ($result_login_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
         echo '<td>' . $row["login"] . '</td>';
     }
     echo'</p>';
-        echo '<table><tr><th>first_name</th><th>second_name</th><th>surname</th><th>role</th><th>login</th></tr>';
+        echo '<table><tr><th>ФАМИЛИЯ</th><th>ИМЯ</th><th>ОТЧЕСТВО</th><th>РОЛЬ</th><th>ЛОГИН</th></tr>';
         foreach ($result as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
             echo '<tr>';
+            echo '<td>' . $row["surname"] . '</td>';
             echo '<td>' . $row["first_name"] . '</td>';
             echo '<td>' . $row["second_name"] . '</td>';
-            echo '<td>' . $row["surname"] . '</td>';
-            echo '<td>' . 'Пользователь' . '</td>';
+            echo '<td>' . 'Родитель' . '</td>';
             echo '<td>' . $row["login"] . '</td>';
-            
             echo '<td>' . '' . '</td>';
             echo '<td>' . '' . '</td>';
             echo '</tr>';
         }
         echo '</table>';
         $result->free();
-        echo'</div>';
+        echo'
+        </div>
+      
+
+        <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
+        
+        </div>
+
+        <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
+        <form method=POST>
+            <button formmethod=POST name=button_registration_children'.$id.' value=1 class = "button_main" style="width: 100%;">Зарегестрировать ребенка</button>
+            </form><br>
+        
+
+        <form method=POST>
+        <button formmethod=POST name=button_children_base'.$id.' value=1 class = "button_main" style="width: 100%;">Дети</button>
+        </form><br>
+        </div>
+        
+        
+        ';echo'';
+
+        echo'
+            ';
         ?>
+        <?php
+if ($_POST['button_registration_children'.$id.'']) {
+    Header("Location:registration_children.php?id=$id");
+}
+if ($_POST['button_children_base'.$id.'']) {
+    Header("Location:children_base.php?id=$id");
+}
+
+?>
