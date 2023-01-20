@@ -1,6 +1,6 @@
 <?php         
 $result_login_name = mysqli_query($mysql, "SELECT login FROM `users` WHERE id_user='$id'");
-include "object_manager.php";
+
 echo '
     <!DOCTYPE HTML>
     <html>
@@ -69,11 +69,11 @@ body {
             </form><br>
 
             <form method=POST>
-            <button formmethod=POST name=button_base_450_koor'.$id.' value=1 class = "button_main" style="width: 100%;">База данных площадок в парках сокращенная</button>
+            <button formmethod=POST name=button_base_koor'.$id.' value=1 class = "button_main" style="width: 100%;">Координаты площадок</button>
             </form><br>
 
             <form method=POST>
-            <button formmethod=POST name=button_base_2000_koor'.$id.' value=1 class = "button_main" style="width: 100%;">База данных спортплощадок сокращенная</button>
+            <button formmethod=POST name=button_yandex_map'.$id.' value=1 class = "button_main" style="width: 100%;">Яндекс карта</button>
             </form><br>
 
             <form method=POST>
@@ -112,11 +112,11 @@ if ($_POST['button_base_450_full'.$id.'']) {
 if ($_POST['button_base_2000_full'.$id.'']) {
     Header("Location:base_2000_full.php?id=$id");
 }
-if ($_POST['button_base_450_koor'.$id.'']) {
-    Header("Location:base_450_koor.php?id=$id");
+if ($_POST['button_base_koor'.$id.'']) {
+    Header("Location:base_koor.php?id=$id");
 }
-if ($_POST['button_base_2000_koor'.$id.'']) {
-    Header("Location:base_2000_koor.php?id=$id");
+if ($_POST['button_yandex_map'.$id.'']) {
+    Header("Location:object_manager.php?id=$id");
 }
 if ($_POST['button_base_users'.$id.'']) {
     Header("Location:base_users.php?id=$id");

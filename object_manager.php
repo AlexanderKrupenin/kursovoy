@@ -1,7 +1,38 @@
 <?php
+ include "db.php";   
+ $id = $_GET['id'];
 echo'
 <!DOCTYPE html>
 <html>
+
+<style>
+body{
+    background: #fde4cf;
+   
+}
+th, td {
+    padding: 10px;
+}
+
+th {
+    background: #606060;
+    color: #fff;
+}
+
+td {
+    background: #b5b5b5;
+}
+</style>
+
+<header>
+<div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
+<h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
+<form method=POST class = "head_title" action = "http://kursovoy:3006/main.php?id='.$id.'">
+    <button formmethod=POST name=1 value=1 class = "button_main" style= "position: fixed; left: 5%;top:12%;">Назад</button>
+    </form><br>
+    <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:65%; top: -5%; width: 20%; height: 25%;" src ="img/logo.svg"></img>
+</header>
+
 <head>
     <title>Площадки.ru</title>
     <script src="UpdateScript.js"> </script>
@@ -33,9 +64,20 @@ echo'
     </style>
 </head>
 <body>
-<div class = "div_history" style="position: absolute; left: 8%; top:210%; width: 80%; height: 80%;">
+<div class = "div_history" style="position: absolute; left: 8%; top:30%; width: 80%; height: 80%;">
 <div id="map"></div>
 </div>
 </body>
+
+<footer>
+            <div class = "top_line head_title"  style= "position: absolute; left: 0%; top:120%; width: 100%; height: 20%;">
+            <div class = "text_footer head_title"  style= "position: absolute; left: 20%; top:20%; width: 60%; height: 20%; color: white; text-align: center;">Крупенин Александр Васильевич
+            <br>
+            группа 211-362
+            <br>
+            +7 901-744-15-74
+            </div>
+           </div>
+            </footer>
 </html>';
 ?>
