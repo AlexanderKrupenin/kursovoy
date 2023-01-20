@@ -1,6 +1,6 @@
 <?php         
 $result_login_name = mysqli_query($mysql, "SELECT login FROM `users` WHERE id_user='$id'");
-
+include "object_manager.php";
 echo '
     <!DOCTYPE HTML>
     <html>
@@ -12,6 +12,7 @@ body {
     height: 1000px;
     background: linear-gradient(to right, #90dbf4, #cfbaf0, #fde4cf);
 }
+
 </style>
 
     <script src="UpdateScript.js"> </script>
@@ -23,7 +24,7 @@ body {
     <body>
 
     <header>
-    
+
     <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
     <h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
     <form method=POST action = "http://kursovoy:3006/index.php">
@@ -82,8 +83,6 @@ body {
             </div>';
 
         echo'
-            
-            
 
             <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
             <form method=POST>
@@ -94,17 +93,17 @@ body {
             <form method=POST>
             <button formmethod=POST name=button_search_ploshchadki_v_parkah_full_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
             </form><br>
-
-           
           
             </div>
 
             <div class = "div_history" style="position: absolute; left: 8%; top:110%; width: 80%; height: 80%;">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HxsBpqUSHGdieR_FqkXfEYd3_XmfPr4&ehbc=2E312F" width="1200" height="600"></iframe>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HxsBpqUSHGdieR_FqkXfEYd3_XmfPr4&ehbc=2E312F" width="1220" height="600"></iframe>
             </div>
+
+            </div>
+            
             ';
-//action = "http://kursovoy:3006/base_450_full.php?id="
-// <button  formmethod=POST name=1 value=1 class = "button_main" style="width: 100%;">База данных площадок в парках</button>
+          
  ?>
 <?php
 if ($_POST['button_base_450_full'.$id.'']) {

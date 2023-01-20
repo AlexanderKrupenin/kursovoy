@@ -3,7 +3,11 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Оптимальное добавление множества меток</title>
+    <title>Площадки.ru</title>
+    <script src="UpdateScript.js"> </script>
+    <script src="update_counter.js"> </script>
+    <link rel="manifest" href = "site.webmanifest">
+    <link rel="stylesheet" href = "index.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--
         Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
@@ -13,8 +17,8 @@ echo'
     <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
     <script src="object_manager.js" type="text/javascript"></script>
 	<style>
-        html, body, #map {
-            width: 100%; height: 100%; padding: 0; margin: 0;
+         #map {
+            width: 96%; height: 98%; padding: 0; margin: 0;position:absolute; left: 2%; ;
         }
         a {
             color: #04b; /* Цвет ссылки */
@@ -29,7 +33,9 @@ echo'
     </style>
 </head>
 <body>
+<div class = "div_history" style="position: absolute; left: 8%; top:210%; width: 80%; height: 80%;">
 <div id="map"></div>
+</div>
 </body>
 </html>';
 ?>
