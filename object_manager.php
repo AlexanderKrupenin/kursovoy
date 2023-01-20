@@ -2,13 +2,15 @@
  include "db.php";   
  $id = $_GET['id'];
 echo'
-<!DOCTYPE html>
+< <!DOCTYPE HTML>
 <html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Площадки.ru</title>
 
 <style>
-body{
-    background: #fde4cf;
-   
+body {
+    height: 1000px;
+    background: linear-gradient(to right, #90dbf4, #cfbaf0, #fde4cf);
 }
 th, td {
     padding: 10px;
