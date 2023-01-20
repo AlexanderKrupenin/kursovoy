@@ -39,98 +39,13 @@ echo '
   </header>
 
 <body>
-<div class = "div_history_bd" style= "position: absolute; left: 2%;top:30%; width: 74%; border:none;">
-    <table style= "position: absolute; left: 0%;top:50%;">
-        <tr>
-            <th>ID</th>
-            <th>Имя</th>
-            <th>Отчество</th>
-            <th>Фамилия</th>
-            <th>Роль</th>
-            <th>Верификатор</th>
-            <th>Логин</th>
-            <th>Пароль</th>
-        </tr>';
+';
         ?>
         <?php
-        
-        $content1 = "
-        
-        <form method=\"POST\">
-        
-        <div class = 'div_history_bd' style= 'position: absolute; left: 0%;top:10%; width:15%;border:none;'>
-        <input style='background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);' type=\"text\" name=\"id1\" placeholder='ID'>
-        <br>
-        
-        
-
-        <div class = 'div_history_bd' style= 'position: absolute; left: 0%;top:20%; width:10%; border:none;'>
-        <button class = 'button_main' type=\"submit\ \">Поиск</button>
-        </div>
-
-        </div>
-        </form>
-        </div> 
-            ";
-        
         require("visual.php");
-
         $id1 = $_POST['id1'];
-
         echo'
-        <div class = "div_history_bd" style= "position: absolute; left: 2%;top:30%; width: 74%; border:none;">
-        <form method=POST>
-
-        <div class = "div_history_bd" style= "position: absolute; left: 0%;top:10%; width:15%;border:none;">
-        <input style="background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);" type=\"text\" name=\"id1\" placeholder="ID">
-
-            <button formmethod=POST name=button_base_2000_koor'.$id.' value=1 class = "button_main" style="width: 100%;">База данных спортплощадок сокращенная</button>
-            </form>
-            </div>
-        <br>
-        ';
-
-        if ($_POST['id1'] <> NULL){
-            $products = mysqli_query($mysql, "SELECT * FROM `users` WHERE id_user='$id1'");
-            $products = mysqli_fetch_all($products);
-            foreach ($products as $product) {
-                echo'
-                    <tr>
-                        <td>';?>
-                        <?= $product[0]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[1]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[2]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[3]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[4]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[5]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[6]; ?><?php
-                        echo'</td>
-                        <td>';?>
-                        <?= $product[7]; ?><?php
-                        echo'</td>
-                        ';?><?php
-                        echo'
-                    
-                    </tr>';
-            }
-        }
-       
-echo '
-    </table>
-
-    <div class = "div_history_bd" style= "position: absolute; left: 60%;top:29%; width: 20%; border:none;">
+    <div class = "div_history_bd" style= "position: absolute; left: 20%;top:15%; width: 20%; border:none;">
     <table style= "position: absolute; left: 0%;top:50%;">
         <tr>
             <th>ID</th>

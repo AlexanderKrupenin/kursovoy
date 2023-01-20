@@ -94,6 +94,9 @@ body {
             <form method=POST>
             <button formmethod=POST name=button_search_ploshchadki_v_parkah_full_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
             </form><br>
+
+           
+          
             </div>
 
             <div class = "div_history" style="position: absolute; left: 8%; top:110%; width: 80%; height: 80%;">
@@ -125,4 +128,5 @@ if ($_POST['button_search_sport_ploshchadki_full_base_2000_full'.$id.'']) {
 if ($_POST['button_search_ploshchadki_v_parkah_full_base_450_full'.$id.'']) {
     Header("Location:search_ploshchadki_v_parkah_full.php?id=$id");
 }
+
 ?>
