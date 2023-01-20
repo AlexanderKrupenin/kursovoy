@@ -11,6 +11,9 @@ echo '
     <script src="update_counter.js"> </script>
     <link rel="manifest" href = "site.webmanifest">
     <link rel="stylesheet" href = "index.css">
+    <link rel="apple-touch-icon" sizes = "180x180" href = "apple-touch-icon.png">
+    <link rel="icon" type = "image/png" sizes="32x32" href = "img/favicon-32x32.png">
+    <link rel="icon" type = "image/png" sizes="16x16" href = "img/favicon-32x32.png">
     <style>
     body{
         background: #fde4cf;
