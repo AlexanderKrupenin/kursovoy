@@ -1,0 +1,360 @@
+<div class = "div_history_bd" style= "position: absolute; left: 8%;top:20%; width:10%; border:none;">
+        
+        <table><tr>
+        <th>id_user</th>	
+        <th>first_name</th>	
+        <th>second_name</th>	
+        <th>surname</th>	
+        <th>role</th>	
+        <th>ver</th>	
+        <th>login</th>	
+        <th>password</th>	
+        </tr>
+        ';
+        
+        foreach ($full_base as $row) { /*
+            Полные тексты
+            id_user	
+            first_name	
+            second_name	
+            surname	
+            role	
+            ver	id_user	first_name	second_name	surname	role	ver	login	password
+            login	
+            password*/
+            echo '<tr>';
+            echo '<td>' . $row["id_user"] . '</td>';
+            echo '<td>' . $row["first_name"] . '</td>';	
+            echo '<td>' . $row["second_name"] . '</td>';	
+            echo '<td>' . $row["surname"] . '</td>';	
+            echo '<td>' . $row["role"] . '</td>';	
+            echo '<td>' . $row["ver"] . '</td>';	
+            echo '<td>' . $row["login"] . '</td>';	
+            echo '<td>' . $row["password"] . '</td>';	
+            echo '</tr>';
+        }
+        echo '</table>
+       
+        </div>';
+
+
+
+
+
+
+        /*
+        if ($_POST['adress'] <> NULL){
+            $adress = $_POST['adress'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE adress LIKE '%$adress%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }
+
+        if ($_POST['objectname'] <> NULL){
+            $objectname = $_POST['objectname'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE objectname LIKE '%$objectname%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }
+
+        if ($_POST['District'] <> NULL){
+            $District = $_POST['District'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE District LIKE '%$District%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }
+
+
+        if ($_POST['AdmArea'] <> NULL){
+            $AdmArea = $_POST['AdmArea'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE AdmArea LIKE '%$AdmArea%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }*/
+
+
+
+
+
+
+
+
+
+
+        /*
+        if ($_POST['adress'] <> NULL){
+            $adress = $_POST['adress'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE adress LIKE '%$adress%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }
+
+        if ($_POST['objectname'] <> NULL){
+            $objectname = $_POST['objectname'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE objectname LIKE '%$objectname%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }
+
+        if ($_POST['District'] <> NULL){
+            $District = $_POST['District'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE District LIKE '%$District%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }
+
+
+        if ($_POST['AdmArea'] <> NULL){
+            $AdmArea = $_POST['AdmArea'];
+            $products = mysqli_query($mysql, "SELECT * FROM `ploshchadki_v_parkah_full` WHERE AdmArea LIKE '%$AdmArea%'");
+            $products = mysqli_fetch_all($products);
+            foreach ($products as $product) {
+                echo'
+                    <tr>
+                        <td>';?>
+                        <?= $product[33]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[1]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[27]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[32]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[26]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[24]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[5]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[4]; ?><?php
+                        echo'</td>
+                        <td>';?>
+                        <?= $product[29]; ?><?php
+                        echo'</td>
+                    </tr>';
+            }
+        }*/
