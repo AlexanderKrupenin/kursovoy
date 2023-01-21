@@ -77,6 +77,10 @@ echo '
             </form><br>
 
         <form method=POST>
+            <button formmethod=POST name=button_yandex_map'.$id.' value=1 class = "button_main" style="width: 100%;">Яндекс карта</button>
+            </form><br>
+
+        <form method=POST>
         <button formmethod=POST name=button_children_base'.$id.' value=1 class = "button_main" style="width: 100%;">Дети</button>
         </form><br>
         </div>
@@ -97,6 +101,8 @@ if ($_POST['button_children_base'.$id.'']) {
 if ($_POST['button_map_google'.$id.'']) {
     Header("Location:map_google.php?id=$id");
 }
-
+if ($_POST['button_yandex_map'.$id.'']) {
+    Header("Location:object_manager.php?id=$id");
+}
 
 ?>

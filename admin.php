@@ -34,7 +34,7 @@ body {
         <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:65%; top: -5%; width: 20%; height: 25%;" src ="img/logo.svg"></img>
         
   </header>
-
+        <body>
     <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 80%; height: 20%; ">
     <p>Вы авторизовались под логином: ';  
     foreach ($result_login_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
@@ -65,15 +65,15 @@ body {
             </form><br>
 
             <form method=POST>
-            <button formmethod=POST name=button_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">База данных спортплощадок</button>
+            <button formmethod=POST name=button_yandex_map'.$id.' value=1 class = "button_main" style="width: 100%;">Яндекс карта</button>
+            </form><br>
+
+            <form method=POST>
+            <button formmethod=POST name=button_map_google'.$id.' value=1 class = "button_main" style="width: 100%;">Google карта</button>
             </form><br>
 
             <form method=POST>
             <button formmethod=POST name=button_base_koor'.$id.' value=1 class = "button_main" style="width: 100%;">Координаты площадок</button>
-            </form><br>
-
-            <form method=POST>
-            <button formmethod=POST name=button_yandex_map'.$id.' value=1 class = "button_main" style="width: 100%;">Яндекс карта</button>
             </form><br>
 
             <form method=POST>
@@ -96,11 +96,11 @@ body {
           
             </div>
 
-            <div class = "div_history" style="position: absolute; left: 8%; top:110%; width: 80%; height: 80%;">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HxsBpqUSHGdieR_FqkXfEYd3_XmfPr4&ehbc=2E312F" width="1220" height="600"></iframe>
             </div>
-
-            </div>
+          
+          
+            </body>
+            
             
             ';
           
@@ -109,8 +109,8 @@ body {
 if ($_POST['button_base_450_full'.$id.'']) {
     Header("Location:base_450_full.php?id=$id");
 }
-if ($_POST['button_base_2000_full'.$id.'']) {
-    Header("Location:base_2000_full.php?id=$id");
+if ($_POST['button_map_google'.$id.'']) {
+    Header("Location:map_google.php?id=$id");
 }
 if ($_POST['button_base_koor'.$id.'']) {
     Header("Location:base_koor.php?id=$id");

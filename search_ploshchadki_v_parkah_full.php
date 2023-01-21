@@ -97,8 +97,7 @@ echo '
             <option value='2'  >частично приспособлен</option>
             <option value='3'  >приспособлен для всех групп инвалидов</option>
             <option value='4'  >приспособлен для лиц с нарушением ОДА</option>
-            <option value='5'  >без специализации</option>
-            <option value='6'  >не приспособлен</option>
+            <option value='5'  >не приспособлен</option>
         </select>
         </div></div><br>
 
@@ -134,7 +133,7 @@ echo '
         $District = $_POST['District'];
         $AdmArea = $_POST['AdmArea'];
 
-        if (isset($_POST['SurfaceTypeWinter']) || isset($_POST['DisabilityFriendly'])){
+        if (isset($_POST['SurfaceTypeWinter']) || isset($_POST['DisabilityFriendly']) || isset($_POST['Lighting'])){
             $SurfaceTypeWinter = $_POST['SurfaceTypeWinter'];
             $DisabilityFriendly = $_POST['DisabilityFriendly'];
             $Lighting = $_POST['Lighting'];
@@ -173,9 +172,6 @@ echo '
                 $select_d = 'приспособлен для лиц с нарушением ОДА';
             }
             if($DisabilityFriendly == 5){
-                $select_d = 'без специализации';
-            }
-            if($DisabilityFriendly == 6){
                 $select_d = 'не приспособлен';
             }
 
