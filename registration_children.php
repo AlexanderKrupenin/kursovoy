@@ -12,7 +12,7 @@
  $role = "3";
  $ver = "1";
  
- if(!empty($_POST)){
+ if($surname !="" && $first_name !="" && $second_name !="" && $login !="" && $password !=""){
   $result = mysqli_query($mysql, "SELECT * FROM users WHERE login=\"".$_POST['login']."\"");
   if(mysqli_num_rows($result) == 0){
       mysqli_query($mysql, "INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
@@ -81,7 +81,7 @@ echo '
     <input class = "button_main"  type="submit" value = "Зарегестрировать"/>
    </form><br>
 
-   <form method=POST action = "http://kursovoy:3006/main.php?id='.$id.'">
+   <form method=POST action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id='.$id.'">
     <button formmethod=POST name=1 value=1 class = "button_main"">Назад</button>
     </form><br>
     </div>';

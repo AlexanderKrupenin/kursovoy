@@ -49,18 +49,18 @@ echo '
     <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:37%; top: -5%; width: 20%; height: 25%;" src ="img/logo2.svg"></img>
 
     <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 45%;">
-    <form action="http://kursovoy:3006/index.php" method="post">
+    <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/index.php" method="post">
       <label>Логин:</label><br>
       <input type="text" name="login" /><br>
       <label>Пароль:</label><br>
       <input type="password" name="password" /><br><br>
       <input class = "button_main"  type="submit" value = "Авторизоваться"/>
    </form><br>
-   <form action="http://kursovoy:3006/registration.php" method="post">
+   <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration.php" method="post">
     <input class = "button_main"  type="submit" value = "   Регистрация   "/>
  </form><br>
 
- <form action="http://kursovoy:3006/guest.php" method="post">
+ <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/guest.php" method="post">
   <input class = "button_main"  type="submit" value = "Войти как гость "/>
 </form>
     </div>';
@@ -77,7 +77,7 @@ echo '
 <?php  $login['id_user'];
     $id = $login['id_user'];?>
 <?php
-Header("Location:main.php?id=$id");
+Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id=$id");
 ?>
 <?php
 }

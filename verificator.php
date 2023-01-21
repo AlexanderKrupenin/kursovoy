@@ -12,9 +12,7 @@ echo '
         background: linear-gradient(to right, #90dbf4, #cfbaf0, #fde4cf);
     }
 
-
 </style>
-
 
     <script src="UpdateScript.js"> </script>
     <script src="update_counter.js"> </script>
@@ -29,15 +27,13 @@ echo '
     <header>
     <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
     <h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
-    <form method=POST action = "http://kursovoy:3006/index.php">
+    <form method=POST action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/index.php">
         <button  formmethod=POST name=1 value=1 class = "head_title button_main" style= "position: fixed; left: 5%;top:12%;">Выйти</button>
         </form><br>
         <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:65%; top: -5%; width: 20%; height: 25%;" src ="img/logo.svg"></img>
   </header>
 
     <body>
-
-
 
     <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 80%; height: 20%;">
     <p>Вы авторизовались под логином: ';  
@@ -62,7 +58,6 @@ echo '
         echo'
         </div>
       
-
         <div class = "div_history" style="position: absolute; left: 8%; top:60%; width: 35%; height: 40%;">
         <form method=POST>
             <button formmethod=POST name=button_registration_children'.$id.' value=1 class = "button_main" style="width: 100%;">Зарегестрировать ребенка</button>
@@ -99,21 +94,21 @@ echo '
         ?>
         <?php
 if ($_POST['button_registration_children'.$id.'']) {
-    Header("Location:registration_children.php?id=$id");
+    Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration_children.php?id=$id");
 }
 if ($_POST['button_children_base'.$id.'']) {
-    Header("Location:children_base.php?id=$id");
+    Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/children_base.php?id=$id");
 }
 if ($_POST['button_map_google'.$id.'']) {
-    Header("Location:map_google.php?id=$id");
+    Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/map_google.php?id=$id");
 }
 if ($_POST['button_yandex_map'.$id.'']) {
-    Header("Location:object_manager.php?id=$id");
+    Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/object_manager.php?id=$id");
 }
 if ($_POST['button_search_sport_ploshchadki_full_base_2000_full'.$id.'']) {
-    Header("Location:search_sport_ploshchadki_full.php?id=$id");
+    Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/search_sport_ploshchadki_full.php?id=$id");
 }
 if ($_POST['button_search_ploshchadki_v_parkah_full_base_450_full'.$id.'']) {
-    Header("Location:search_ploshchadki_v_parkah_full.php?id=$id");
+    Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/search_ploshchadki_v_parkah_full.php?id=$id");
 }
 ?>
