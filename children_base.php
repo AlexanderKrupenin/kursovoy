@@ -43,7 +43,6 @@ echo '
             <th>Имя</th>
             <th>Отчество</th>
             <th>Фамилия</th>
-            <th>Роль</th>
             <th>Логин</th>
         </tr>
         ';
@@ -195,9 +194,6 @@ echo '
               echo '</td>
             <td>'; ?>
             <?= $product[3]; ?><?php
-              echo '</td>
-            <td>'; ?>
-            <?= $product[4]; ?><?php
               echo '</td>
             
             <td>'; ?>

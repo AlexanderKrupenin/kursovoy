@@ -41,7 +41,7 @@ body {
         echo '<td>' . $row["login"] . '</td>';
     }
     echo'</p>';
-        echo '<table><tr><th>ID</th><th>ФАМИЛИЯ</th><th>ИМЯ</th><th>ОТЧЕСТВО</th><th>РОЛЬ</th><th>ЛОГИН</th><th>ПАРОЛЬ</th></tr>';
+        echo '<table><tr><th>ID</th><th>ФАМИЛИЯ</th><th>ИМЯ</th><th>ОТЧЕСТВО</th><th>РОЛЬ</th><th>ЛОГИН</th></tr>';
         foreach ($result as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
             echo '<tr>';
             echo '<td>' . $id . '</td>';
@@ -50,7 +50,6 @@ body {
             echo '<td>' . $row["second_name"] . '</td>';
             echo '<td>' . 'Администратор' . '</td>';
             echo '<td>' . $row["login"] . '</td>';
-            echo '<td>' . $row["password"] . '</td>'; 
             echo '<td>' . '' . '</td>';
             echo '<td>' . '' . '</td>';
             echo '</tr>';
@@ -60,10 +59,7 @@ body {
         echo'</div>
         <div class = "div_history" style="position: absolute; left: 8%; top:60%; width: 35%; height: 40%;">
         
-            <form method=POST>
-            <button formmethod=POST name=button_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">База данных площадок в парках</button>
-            </form><br>
-
+            
             <form method=POST>
             <button formmethod=POST name=button_yandex_map'.$id.' value=1 class = "button_main" style="width: 100%;">Яндекс карта</button>
             </form><br>
@@ -106,9 +102,7 @@ body {
           
  ?>
 <?php
-if ($_POST['button_base_450_full'.$id.'']) {
-    Header("Location:base_450_full.php?id=$id");
-}
+
 if ($_POST['button_map_google'.$id.'']) {
     Header("Location:map_google.php?id=$id");
 }

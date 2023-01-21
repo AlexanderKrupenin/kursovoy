@@ -63,11 +63,7 @@ echo '
         </div>
       
 
-        <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
-        
-        </div>
-
-        <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
+        <div class = "div_history" style="position: absolute; left: 8%; top:60%; width: 35%; height: 40%;">
         <form method=POST>
             <button formmethod=POST name=button_registration_children'.$id.' value=1 class = "button_main" style="width: 100%;">Зарегестрировать ребенка</button>
             </form><br>
@@ -85,7 +81,17 @@ echo '
         </form><br>
         </div>
         
+        <div class = "div_history" style="position: absolute; left: 53%; top:60%; width: 35%; height: 40%;">
+        <form method=POST>
+            <button formmethod=POST name=button_search_sport_ploshchadki_full_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск спортплощадок</button>
+            </form><br>
         
+
+        <form method=POST>
+        <button formmethod=POST name=button_search_ploshchadki_v_parkah_full_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
+        </form><br>
+      
+        </div>
         ';echo'';
 
         echo'
@@ -104,5 +110,10 @@ if ($_POST['button_map_google'.$id.'']) {
 if ($_POST['button_yandex_map'.$id.'']) {
     Header("Location:object_manager.php?id=$id");
 }
-
+if ($_POST['button_search_sport_ploshchadki_full_base_2000_full'.$id.'']) {
+    Header("Location:search_sport_ploshchadki_full.php?id=$id");
+}
+if ($_POST['button_search_ploshchadki_v_parkah_full_base_450_full'.$id.'']) {
+    Header("Location:search_ploshchadki_v_parkah_full.php?id=$id");
+}
 ?>

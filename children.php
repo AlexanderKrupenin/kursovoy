@@ -83,5 +83,43 @@ echo '
 
 
         $result->free();
-        echo'</div>';
+        echo'</div>
+        
+        <div class = "div_history" style="position: absolute; left: 30%; top:80%; width: 35%; height: 40%;">
+
+        <form method=POST>
+            <button formmethod=POST name=button_map_google'.$id.' value=1 class = "button_main" style="width: 100%;">Google карта</button>
+            </form><br>
+
+        <form method=POST>
+            <button formmethod=POST name=button_yandex_map'.$id.' value=1 class = "button_main" style="width: 100%;">Яндекс карта</button>
+            </form><br>
+
+
+        <form method=POST>
+            <button formmethod=POST name=button_search_sport_ploshchadki_full_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск спортплощадок</button>
+            </form><br>
+        
+
+        <form method=POST>
+            <button formmethod=POST name=button_search_ploshchadki_v_parkah_full_base_450_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск площадок в парках</button>
+            </form><br>
+
+        </div>
+        
+        ';
         ?>
+        <?php
+if ($_POST['button_map_google'.$id.'']) {
+    Header("Location:map_google.php?id=$id");
+}
+if ($_POST['button_yandex_map'.$id.'']) {
+    Header("Location:object_manager.php?id=$id");
+}
+if ($_POST['button_search_sport_ploshchadki_full_base_2000_full'.$id.'']) {
+    Header("Location:search_sport_ploshchadki_full.php?id=$id");
+}
+if ($_POST['button_search_ploshchadki_v_parkah_full_base_450_full'.$id.'']) {
+    Header("Location:search_ploshchadki_v_parkah_full.php?id=$id");
+}
+?>
