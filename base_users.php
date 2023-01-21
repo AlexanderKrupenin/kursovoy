@@ -97,7 +97,7 @@ echo '
 
 
         <form method=\"POST\">
-        <div class = 'div_history_bd' style= 'position: absolute; left: -10%;top:120%; width: 80%; border:none;'>
+        <div class = 'div_history_bd' style= 'position: absolute; left: -10%;top:110%; width: 80%; border:none;'>
         <div class = 'div_history_bd' style= 'position: absolute; left: 8%;top:-10%; width:15%;border:none;'>
         <div>
         <input style='background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);' type=\"text\" name=\"id_user_up\" placeholder='ID'>
@@ -136,7 +136,25 @@ echo '
         </div>
         </div>
         </form>
-        ";
+
+
+
+        <form method=\"POST\">
+        <div class = 'div_history_bd' style= 'position: absolute; left: -10%;top:175%; width: 80%; border:none;'>
+        <div class = 'div_history_bd' style= 'position: absolute; left: 8%;top:100%; width:15%;border:none;'>
+        <div>
+        <input style='background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);' type=\"text\" name=\"id_user_del\" placeholder='ID'>
+        </div><br>
+
+        <div class = 'div_history_bd' style= 'position: absolute; left: 4%;top:65%; width:10%; border:none;'>
+        <div>
+        <button class = 'button_main' type=\"submit\ \">Удалить</button>
+        </div>
+
+        </div>
+        </div>
+        </form>
+        "; 
         require("visual.php");
 
         $id_user = $_POST['id_user'];
@@ -154,21 +172,12 @@ echo '
         $role_up = $_POST['role_up'];
         $ver_up = $_POST['ver_up'];
         $login_up = $_POST['login_up'];
-/*
-Полные тексты
-id_user	
-first_name	
-second_name	
-surname	
-role	
-ver	
-login	
-password
 
-UPDATE `users` SET `id_user` = '11', `first_name` = '455', `second_name` = '455', 
-`surname` = '455', `role` = '1', `ver` = '1', `login` = '455',
- `password` = '21232f297a57a5a743894a0e4a801fc3' WHERE `users`.`id_user` = 5;
-*/
+        $id_user_del = $_POST['id_user_del'];
+        
+            if($id_user_del !=""){
+            $delete_users = mysqli_query($mysql, "DELETE FROM users WHERE id_user='$id_user_del'");
+            }
 
             if($id_user_up !="" && $first_name_up!="" && $second_name_up!="" && $surname_up!="" && $role_up!="" 
             && $ver_up!="" && $login_up!=""){

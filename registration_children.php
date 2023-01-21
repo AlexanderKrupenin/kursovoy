@@ -18,19 +18,7 @@
       mysqli_query($mysql, "INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
       VALUES (NULL,'$first_name', '$second_name', '$surname', '$role', '$id', '$login', '$password')");
   }
-
-}/*INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
-VALUES (NULL,'null', 'null', 'null', '2', '1', 'null', 'null')
-
-id_user	
-first_name	
-second_name	
-surname	
-role	
-ver	
-login	
-password
-*/
+}
 
  ?>
 <?php
