@@ -37,10 +37,9 @@ echo '
   </header>
 
 <body>
-<div class = "div_history_bd" style= "position: absolute; left: 8%;top:30%; width: 80%; border:none;">
+<div class = "div_history_bd" style= "position: absolute; left: 28%;top:30%; width: 80%; border:none;">
         <table style= "position: absolute; left: 25%;top:-5%;">
         <tr>
-            <th>ID</th>
             <th>Имя</th>
             <th>Отчество</th>
             <th>Фамилия</th>
@@ -158,7 +157,7 @@ echo '
 
         $login_user_del = $_POST['login_user_del'];
         
-            if($id_user_del !=""){
+            if($login_user_del !=""){
             $delete_users = mysqli_query($mysql, "DELETE FROM users WHERE login='$login_user_del' AND ver='$id'");
             }
 
@@ -182,9 +181,6 @@ echo '
             foreach ($products as $product) {
                 echo '
         <tr>
-            <td>'; ?>
-            <?= $product[0]; ?><?php
-              echo '</td>
             <td>'; ?>
             <?= $product[1]; ?><?php
               echo '</td>

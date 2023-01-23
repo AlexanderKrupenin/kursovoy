@@ -1,4 +1,5 @@
-<?php
+<?php //UPDATE `users` SET `first_name` = '$first_name', `second_name` = '$second_name', `surname` = '$surname', 
+      //`role` = '$role', `ver` = '$ver', `login` = '$login', `password` = '$password' WHERE `users`.`id_user` = '$id';
     include "db.php";
     $id = $_GET['id'];
   ?>
@@ -8,17 +9,15 @@
  $second_name = $_POST['second_name'];
  $login = $_POST['login'];
  $password = md5($_POST["password"]);
- $id_user = $id;
+ $id_user = "";
  $role = "2";
  $ver = "1";
- //$surname !="" && $first_name !="" && $second_name !="" &&
+ 
  if($surname !="" && $first_name !="" && $second_name !="" && $login !="" && $password !=""){
-  $result = mysqli_query($mysql, "SELECT * FROM users WHERE login=\"".$_POST['login']."\"");
-  if(mysqli_num_rows($result) == 0){
-      mysqli_query($mysql, "INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
-      VALUES (NULL,'$first_name', '$second_name', '$surname', '$role', '$ver', '$login', '$password')");
-  }
-
+  
+      mysqli_query($mysql, "UPDATE `users` SET `first_name` = '$first_name', `second_name` = '$second_name', `surname` = '$surname', 
+      `role` = '$role', `ver` = '$ver', `login` = '$login', `password` = '$password' WHERE `users`.`id_user` = '$id';");
+  
 }
 
  ?>
@@ -29,7 +28,6 @@ echo '
   <head>
     <meta charset="utf-8">
     <title>Площадки.ru</title>
-      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
       <link rel="manifest" href="site.webmanifest">
       <link rel="stylesheet" href="index.css">
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -69,7 +67,7 @@ echo '
      <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:37%; top: -5%; width: 20%; height: 25%;" src ="img/logo2.svg"></img>
 
      <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 55%;">
-    <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration_fio.php" method="post" >
+    <form action="" method="post" >
     <label>Фамилия:</label><br>
     <input type="text" name="surname" /><br>
     <label>Имя:</label><br>
@@ -80,7 +78,7 @@ echo '
     <input type="text" name="login" /><br>
     <label>Пароль:</label><br>
     <input type="password" name="password" /><br><br>
-    <input class = "button_main"  type="submit" value = "Зарегистрироваться"/>
+    <input class = "button_main"  type="submit" value = "Изменить"/>
    </form><br>
 
    <form method=POST action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id='.$id.'">

@@ -68,14 +68,9 @@ echo '
 
      <img class = " head_title" style="postion:fixed; border: none; backgroung-color: none; left:37%; top: -5%; width: 20%; height: 25%;" src ="img/logo2.svg"></img>
 
-     <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 55%;">
+     <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 45%;">
     <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration.php" method="post" >
-    <label>Фамилия:</label><br>
-    <input type="text" name="surname" /><br>
-    <label>Имя:</label><br>
-    <input type="text" name="first_name" /><br>
-    <label>Отчество:</label><br>
-    <input type="text" name="second_name" /><br>
+    <label>Регистрация</label><br><br>
     <label>Логин:</label><br>
     <input type="text" name="login" /><br>
     <label>Пароль:</label><br>
