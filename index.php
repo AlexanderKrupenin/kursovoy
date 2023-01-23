@@ -54,14 +54,14 @@ echo '
       <input type="text" name="login" /><br>
       <label>Пароль:</label><br>
       <input type="password" name="password" /><br><br>
-      <input class = "button_main"  type="submit" value = "Авторизоваться"/>
+      <input class = "button_main"  type="submit" value = "  Авторизоваться  "/>
    </form><br>
    <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration.php" method="post">
-    <input class = "button_main"  type="submit" value = "   Регистрация   "/>
+    <input class = "button_main"  type="submit" value = "     Регистрация     "/>
  </form><br>
 
  <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/guest.php" method="post">
-  <input class = "button_main"  type="submit" value = "Войти как гость "/>
+  <input class = "button_main"  type="submit" value = "Посмотреть карту"/>
 </form>
     </div>';
     echo'

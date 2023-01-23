@@ -28,6 +28,7 @@ echo '
 
 <header>
     <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
+    <div class = "info_up head_title" style= "position: fixed; left: 40%;top:14%;">Мои дети</div>
     <h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
     <form method=POST class = "head_title" action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id='.$id.'">
         <button formmethod=POST name=1 value=1 class = "button_main" style= "position: fixed; left: 5%;top:12%;">Назад</button>
@@ -124,13 +125,11 @@ echo '
         </div>
         </form>
 
-
-
         <form method=\"POST\">
         <div class = 'div_history_bd' style= 'position: absolute; left: -10%;top:175%; width: 80%; height: 10%; border:none;'>
         <div class = 'div_history_bd' style= 'position: absolute; left: 8%;top:80%; width:15%;border:none;'>
         <div>
-        <input style='background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);' type=\"text\" name=\"id_user_del\" placeholder='ID'>
+        <input style='background: linear-gradient(132deg, #90dbf4, #cfbaf0, #fde4cf);' type=\"text\" name=\"login_user_del\" placeholder='Логин'>
         </div><br>
 
         <div class = 'div_history_bd' style= 'position: absolute; left: 4%;top:155%; width:10%; border:none;'>
@@ -157,10 +156,10 @@ echo '
         $surname_up = $_POST['surname_up'];
         $login_up = $_POST['login_up'];
 
-        $id_user_del = $_POST['id_user_del'];
+        $login_user_del = $_POST['login_user_del'];
         
             if($id_user_del !=""){
-            $delete_users = mysqli_query($mysql, "DELETE FROM users WHERE id_user='$id_user_del' AND ver='$id'");
+            $delete_users = mysqli_query($mysql, "DELETE FROM users WHERE login='$login_user_del' AND ver='$id'");
             }
 
             if($id_up !="" && $first_name_up!="" && $second_name_up!="" && $surname_up!=""

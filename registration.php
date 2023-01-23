@@ -11,8 +11,8 @@
  $id_user = "";
  $role = "2";
  $ver = "1";
- 
- if($surname !="" && $first_name !="" && $second_name !="" && $login !="" && $password !=""){
+ //$surname !="" && $first_name !="" && $second_name !="" &&
+ if($login !="" && $password !=""){
   $result = mysqli_query($mysql, "SELECT * FROM users WHERE login=\"".$_POST['login']."\"");
   if(mysqli_num_rows($result) == 0){
       mysqli_query($mysql, "INSERT INTO `users` (`id_user`, `first_name`, `second_name`, `surname`, `role`, `ver`, `login`, `password`) 
@@ -66,7 +66,7 @@ echo '
        <div class="cube"></div>
      </div>
 
-     <img class= " head_title" style="postion:fixed; border: none; backgroung-color: none; left:37%; top: -5%; width: 20%; height: 25%;" src ="img/logo2.svg"></img>
+     <img class = " head_title" style="postion:fixed; border: none; backgroung-color: none; left:37%; top: -5%; width: 20%; height: 25%;" src ="img/logo2.svg"></img>
 
      <div class= "div_aut" style="postion:absolute; left:35%; top: 20%; height: 55%;">
     <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration.php" method="post" >
@@ -80,7 +80,7 @@ echo '
     <input type="text" name="login" /><br>
     <label>Пароль:</label><br>
     <input type="password" name="password" /><br><br>
-    <input class = "button_main"  type="submit" value = "Зарегестрироваться"/>
+    <input class = "button_main"  type="submit" value = "Зарегистрироваться"/>
    </form><br>
 
    <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/index.php" method="post" >

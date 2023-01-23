@@ -29,6 +29,7 @@ echo '
 <header>
     <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
     <h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
+    <div class = "info_up head_title" style= "position: fixed; left: 31%;top:14%;">Поиск адреса игровой площадки в парке</div>
     <form method=POST class = "head_title" action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id='.$id.'">
         <button formmethod=POST name=1 value=1 class = "button_main" style= "position: fixed; left: 5%;top:12%;">Назад</button>
         </form><br>

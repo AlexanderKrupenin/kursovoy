@@ -42,6 +42,20 @@
   padding: 4px 30px;
 }
 
+.info_up {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: Nunito;
+  text-decoration: none;
+  border: 2px solid rgb(39, 39, 39);
+  border-radius: 20px;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  background-color:rgb(39, 39, 39);
+  padding: 4px 30px;
+}
+
 .button_main {
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -97,8 +111,9 @@
   }
 
   .div_history{
-    display: inline-block;
+  
     font-family: Nunito;
+    text-align: center;
     position: relative;
     color: rgb(39, 39, 39);
     font-size: 20px;
