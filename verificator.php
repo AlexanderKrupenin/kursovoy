@@ -67,7 +67,7 @@ echo '
       
         <div class = "div_history" style="position: absolute; left: 8%; top:80%; width: 35%; height: 40%;">
         <form method=POST>
-            <button formmethod=POST name=button_registration_children'.$id.' value=1 class = "button_main" style="width: 100%;">Зарегестрировать ребенка</button>
+            <button formmethod=POST name=button_registration_children'.$id.' value=1 class = "button_main" style="width: 100%;">Зарегистрировать ребенка</button>
             </form><br>
 
         <form method=POST>
