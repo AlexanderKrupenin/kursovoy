@@ -47,16 +47,16 @@ echo '
     <body>';
     echo'<div class = "info_up head_title" style= "position: fixed; left: 5%;top:2%; width: 10%; height: 5%;">
     <p>Логин: ';  
-    foreach ($result_login_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+    foreach ($result_login_name as $row) { 
         echo '<td>' . $row["login"] . '</td>';
     }
     echo'
     </div>';
     echo'
-    <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 30%; height: 40%;">';
+    <div class = "div_history" style= "position: absolute; left: 8%;top:30%; width: 30%; height: 35%;">';
    
     echo '<table style= "position: absolute; left: 38%;">';
-        foreach ($result as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+        foreach ($result as $row) {
             echo '<tr>';
             echo '<td> ФАМИЛИЯ<br>' . $row["surname"] . '</td>';
             echo '</tr>';
@@ -76,10 +76,10 @@ echo '
         <div class = "div_history" style= "position: absolute; left: 58%;top:22%; width: 30%; height: 40%; border: none;">
         <p>Родитель   </p>
         </div>
-        <div class = "div_history" style= "position: absolute; left: 58%;top:30%; width: 30%; height: 40%;">
+        <div class = "div_history" style= "position: absolute; left: 58%;top:30%; width: 30%; height: 35%;">
 
         <table style= "position: absolute; left: 38%;">';
-            foreach ($result_ver_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+            foreach ($result_ver_name as $row) {
                 echo '<tr>';
                 echo '<td> ФАМИЛИЯ<br>' . $row["surname"] . '</td>';
                 echo '</tr>';
@@ -100,7 +100,7 @@ echo '
         $result->free();
         echo'</div>
         
-        <div class = "div_history" style="position: absolute; left: 30%; top:80%; width: 35%; height: 40%;">
+        <div class = "div_history" style="position: absolute; left: 30%; top:80%; width: 35%; height: 31%;">
 
         <form method=POST>
             <button formmethod=POST name=button_map_google'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск по Google картам</button>

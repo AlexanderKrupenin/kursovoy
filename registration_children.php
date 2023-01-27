@@ -1,5 +1,4 @@
-<?php //UPDATE `users` SET `first_name` = '$first_name', `second_name` = '$second_name', `surname` = '$surname', 
-      //`role` = '$role', `ver` = '$ver', `login` = '$login', `password` = '$password' WHERE `users`.`id_user` = '$id';
+<?php 
     include "db.php";
     $id = $_GET['id'];
   ?>
@@ -80,7 +79,7 @@ echo '
     <input type="text" name="login" /><br>
     <label>Пароль:</label><br>
     <input type="password" name="password" /><br><br>
-    <input class = "button_main"  type="submit" value = "Зарегестрировать"/>
+    <input class = "button_main"  type="submit" value = "Зарегистрировать"/>
    </form><br>
 
    <form method=POST action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id='.$id.'">

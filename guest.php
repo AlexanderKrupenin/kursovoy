@@ -39,8 +39,8 @@ echo '
         </div>
 
     <div class = "div_history" style="position: absolute; left: 8%; top:115%; width: 80%; height: 10%; border:none;">
-    <div class = "div_history" style="position: absolute; left: 8%; top:0%; width: 80%; height: 10%; border:none;">Для того, чтобы получить доступ к
-    Яндекс картам с расширенным функционалом зарегистрируйтесь</div>
+    <div class = "div_history" style="position: absolute; left: 8%; top:0%; width: 80%; height: 10%; border:none;">Зарегистрируйтесь, чтобы
+    получить расширенный функционал</div>
     <form method=POST action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration.php">
         <button  formmethod=POST name=1 value=1 class = "head_title button_main" style= "position: absolute; left: 40%;top:50%; border:none;">Зарегистрироваться</button>
         </form>
@@ -55,6 +55,19 @@ echo '
             +7 901-744-15-74
             </div>
            </div>
+           <div class = "div_h3" style="position: absolute; left: 8%; top:135%; width: 15%; height: 5%; font-size: 2px;">
+    <form action="https://data.mos.ru/opendata/7708308010-detskie-igrovye-ploshchadki-v-parkah">
+    <button formmethod=POST name=button_base_koor value=1 class = "button_main" style="width: 100%; font-size: 8px;">Открытые данные портала 
+    Правительства Москвы. Детские игровые площадки в парках</button>
+    </form>
+    </div>
+
+    <div class = "div_h3" style="position: absolute; left: 78%; top:135%; width: 15%; height: 5%; font-size: 2px;">
+    <form action="https://data.mos.ru/opendata/7708308010-sportivnye-ploshchadki">
+    <button formmethod=POST name=button_base_koor value=1 class = "button_main" style="width: 100%; font-size: 8px;">Открытые данные портала 
+    Правительства Москвы. Спортивные площадки</button>
+    </form>
+    </div>
             </footer>
      ';
         ?>

@@ -1,5 +1,4 @@
-<?php //UPDATE `users` SET `first_name` = '$first_name', `second_name` = '$second_name', `surname` = '$surname', 
-      //`role` = '$role', `ver` = '$ver', `login` = '$login', `password` = '$password' WHERE `users`.`id_user` = '$id';
+<?php 
     include "db.php";
     $id = $_GET['id'];
   ?>

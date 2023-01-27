@@ -38,7 +38,7 @@ body {
         ';
     echo'<div class = "info_up head_title" style= "position: fixed; left: 5%;top:2%; width: 10%; height: 5%;">
     <p>Логин: ';  
-    foreach ($result_login_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+    foreach ($result_login_name as $row) { 
         echo '<td>' . $row["login"] . '</td>';
     }
     echo'
@@ -48,7 +48,7 @@ body {
     ';
     echo'</p>';
         echo '<table style= "position: absolute; left: 38%;">';
-        foreach ($result as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+        foreach ($result as $row) { 
             echo '<tr>';
             echo '<td> ID<br>' . $id . '</td>';
             echo '</tr>';
@@ -68,7 +68,7 @@ body {
         echo '</table>';
         $result->free();
         echo'</div>
-        <div class = "div_history" style="position: absolute; left: 8%; top:85%; width: 35%; height: 40%;">
+        <div class = "div_history" style="position: absolute; left: 8%; top:95%; width: 35%; height: 40%;">
 
             <form method=POST>
             <button formmethod=POST name=button_base_koor'.$id.' value=1 class = "button_main" style="width: 100%;">Координаты площадок</button>
@@ -82,7 +82,7 @@ body {
 
         echo'
 
-            <div class = "div_history" style="position: absolute; left: 53%; top:85%; width: 35%; height: 40%;">
+            <div class = "div_history" style="position: absolute; left: 53%; top:95%; width: 35%; height: 40%;">
             <form method=POST>
                 <button formmethod=POST name=button_search_sport_ploshchadki_full_base_2000_full'.$id.' value=1 class = "button_main" style="width: 100%;">Поиск спортплощадок</button>
                 </form><br>

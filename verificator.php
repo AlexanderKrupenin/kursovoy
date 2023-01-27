@@ -37,17 +37,17 @@ echo '
     <body>';
     echo'<div class = "info_up head_title" style= "position: fixed; left: 5%;top:2%; width: 10%; height: 5%;">
     <p>Логин: ';  
-    foreach ($result_login_name as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+    foreach ($result_login_name as $row) { 
         echo '<td>' . $row["login"] . '</td>';
     }
     echo'
     </div>';
     echo'
-    <div class = "div_history" style= "position: absolute; left: 25%;top:30%; width: 45%; height: 45%; ">';
+    <div class = "div_history" style= "position: absolute; left: 27%;top:30%; width: 45%; height: 35%; ">';
     
     echo'</p>';
     echo '<table style= "position: absolute; left: 38%;">';
-        foreach ($result as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+        foreach ($result as $row) { 
             echo '<tr>';
             echo '<td> ФАМИЛИЯ<br>' . $row["surname"] . '</td>';
             echo '</tr>';

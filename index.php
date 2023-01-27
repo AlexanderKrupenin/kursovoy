@@ -59,11 +59,12 @@ echo '
    <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/registration.php" method="post">
     <input class = "button_main"  type="submit" value = "     Регистрация     "/>
  </form><br>
-
  <form action="http://krupeninkursovoy.std-2008.ist.mospolytech.ru/guest.php" method="post">
   <input class = "button_main"  type="submit" value = "Посмотреть карту"/>
 </form>
-    </div>';
+    </div>
+    </div>
+    ';
     echo'
   </body>
   </html>';

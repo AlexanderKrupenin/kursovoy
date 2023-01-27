@@ -11,7 +11,6 @@
  $id_user = "";
  $role = "2";
  $ver = "1";
- //$surname !="" && $first_name !="" && $second_name !="" &&
  if($login !="" && $password !=""){
   $result = mysqli_query($mysql, "SELECT * FROM users WHERE login=\"".$_POST['login']."\"");
   if(mysqli_num_rows($result) == 0){

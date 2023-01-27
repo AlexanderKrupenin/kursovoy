@@ -55,7 +55,7 @@ td {
             <th>latitude</th>
             <th>longitude</th>
                     </tr>';
-        foreach ($full_base as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+        foreach ($full_base as $row) { 
             echo '<tr>';
             echo '<td>' . $row["adress"] . '</td>';
             echo '<td>' . $row["latitude"] . '</td>';
@@ -74,7 +74,7 @@ td {
                 <th>latitude</th>
                 <th>longitude</th>
                         </tr>';
-            foreach ($full_base1 as $row) { //id_user`, `first_name`, `second_name`, `surname`, `role`, `login`, `password`
+            foreach ($full_base1 as $row) { 
                 echo '<tr>';
                 echo '<td>' . $row["adress"] . '</td>';
                 echo '<td>' . $row["latitude"] . '</td>';
