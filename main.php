@@ -10,7 +10,7 @@ $role = mysqli_fetch_assoc($result);
 
 if ($role["role"] == 1) {
     if ($result = $mysql->query($sql)) {
-        $rowsCount = $result->num_rows; // количество полученных строк\
+        $rowsCount = $result->num_rows;
         include "admin.php";
         
     }
@@ -18,7 +18,7 @@ if ($role["role"] == 1) {
 
 if ($role["role"] == 2) {
     if ($result = $mysql->query($sql)) {
-        $rowsCount = $result->num_rows; // количество полученных строк
+        $rowsCount = $result->num_rows; 
         include "verificator.php";
     }
 }
@@ -26,7 +26,7 @@ if ($role["role"] == 2) {
 
 if ($role["role"] == 3) {
     if ($result = $mysql->query($sql)) {
-        $rowsCount = $result->num_rows; // количество полученных строк
+        $rowsCount = $result->num_rows;
         include "children.php";
     }
 }

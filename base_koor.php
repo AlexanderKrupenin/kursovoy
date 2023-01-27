@@ -38,6 +38,8 @@ td {
 <header>
 <div class = "top_line head_title"  style= "position: fixed; left: 0%;top:0%; width: 100%; height: 20%;"> </div>
 <div class = "info_up head_title" style= "position: fixed; left: 38%;top:14%;">Таблица площадок</div>
+<div class = "info_up" style= "position: absolute; left: 10%;top:30%;">Игровые площадки в парках</div>
+<div class = "info_up" style= "position: absolute; left: 67%;top:30%;">Спортивные площадки</div>
 <h1 class = "text_up head_title" style= "position: fixed; left: 35%;top:0%; width: 20%;height: 5%;">Площадки.ru</h1>
 <form method=POST class = "head_title" action = "http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id='.$id.'">
     <button formmethod=POST name=1 value=1 class = "button_main" style= "position: fixed; left: 5%;top:12%;">Назад</button>
@@ -88,7 +90,7 @@ td {
 
             </body>
             <footer>
-            <div class = "top_line head_title"  style= "position: absolute; left: 0%; top:2120%; width: 100%; height: 20%;">
+            <div class = "top_line head_title"  style= "position: absolute; left: 0%; top:6140%; width: 100%; height: 20%;">
             <div class = "text_footer head_title"  style= "position: absolute; left: 20%; top:20%; width: 60%; height: 20%; color: white; text-align: center;">Крупенин Александр Васильевич
             <br>
             группа 211-362

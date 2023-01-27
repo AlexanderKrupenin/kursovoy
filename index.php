@@ -73,12 +73,8 @@ echo '
  $password = md5($_POST['password']);
  $result = mysqli_query($mysql, "SELECT id_user FROM `users` WHERE login ='$login' AND password = '$password'");
         if($login = mysqli_fetch_assoc($result)){
-           ?>
-<?php  $login['id_user'];
-    $id = $login['id_user'];?>
-<?php
-Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id=$id");
-?>
-<?php
+        $login['id_user'];
+        $id = $login['id_user'];
+        Header("Location:http://krupeninkursovoy.std-2008.ist.mospolytech.ru/main.php?id=$id");
 }
  ?>
